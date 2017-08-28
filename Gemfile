@@ -30,6 +30,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'devise'
 gem 'simple_token_authentication', '~> 1.0'
+
+gem 'redis', '~> 3.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
