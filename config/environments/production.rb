@@ -39,7 +39,7 @@ Rails.application.configure do
   config.action_cable.url = "wss://productboad-ws.herokuapp.com/cable"
   # config.action_cable.allowed_request_origins = [ 'http://example.com', /http:\/\/example.*/ ]
   config.web_socket_server_url = "wss://productboad-ws.herokuapp.com/cable" 
-  config.action_cable.allowed_request_origins = ['https://productboad-demo.herokuapp.com', 'https://productboad-demo.herokuapp.com']
+  config.action_cable.allowed_request_origins = ['https://productboard-demo.herokuapp.com', 'https://productboard-demo.herokuapp.com']
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
 
