@@ -7,7 +7,7 @@ class Products < ApplicationCable::Channel
     done = []
     p 'CONNARD'
     p Product.find_by(name: params[:product_name])
-    Product.find_by(name: params[:product_name]).cards.each do |card|
+    Product.find_by(name: params[:product_name]).cards.order(:position).each do |card|
       case card.col_name
       when 'backlog'
         backlog << {id: card.id, content: card.content, position: card.position }
